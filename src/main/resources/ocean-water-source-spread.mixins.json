@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "magicjinn.oceanwatersourcespread.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"FlowingFluidMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

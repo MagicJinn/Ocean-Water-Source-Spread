@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "ocean-water-source-spread",
+	"version": "${version}",
+	"name": "Ocean Water Source Spread",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ocean-water-source-spread/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"magicjinn.oceanwatersourcespread.OceanWaterSourceSpread"
+		],
+		"client": [
+			"magicjinn.oceanwatersourcespread.OceanWaterSourceSpreadClient"
+		]
+	},
+	"mixins": [
+		"ocean-water-source-spread.mixins.json",
+		{
+			"config": "ocean-water-source-spread.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
